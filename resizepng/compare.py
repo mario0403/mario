@@ -20,11 +20,11 @@ f.close( ) ;#
 
 
 
-img1 = cv2.resize(image, (imy2, imx2), interpolation=cv2.INTER_NEAREST);
-img2 = cv2.resize(image, (imy2, imx2), interpolation=cv2.INTER_LINEAR);
-img3 = cv2.resize(image, (imy2, imx2), interpolation=cv2.INTER_AREA);
-img4 = cv2.resize(image, (imy2, imx2), interpolation=cv2.INTER_CUBIC);
-img5 = cv2.resize(image, (imy2, imx2), interpolation=cv2.INTER_LANCZOS4);
+img1 = cv2.resize(image, (newx, newy), interpolation=cv2.INTER_NEAREST);
+img2 = cv2.resize(image, (newx, newy), interpolation=cv2.INTER_LINEAR);
+img3 = cv2.resize(image, (newx, newy), interpolation=cv2.INTER_AREA);
+img4 = cv2.resize(image, (newx, newy), interpolation=cv2.INTER_CUBIC);
+img5 = cv2.resize(image, (newx, newy), interpolation=cv2.INTER_LANCZOS4);
 
 cv2.imwrite('INTER_NEAREST.png',img1);
 cv2.imwrite('INTER_LINEAR.png',img2);
